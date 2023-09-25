@@ -2,7 +2,7 @@ import "https://unpkg.com/navigo"  //Will create the global Navigo object used b
 import "https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"
 
 import {
-  setActiveLink, adjustForMissingHash, renderHtml, loadHtml
+  setActiveLink, renderHtml, loadHtml
 } from "./utils.js"
 
 import { initNavigate } from "./pages/navigate/navigate.js"
@@ -24,7 +24,7 @@ window.addEventListener("load", async () => {
   const templateDemo1 = await loadHtml("./pages/demo1/demo1.html")
 
   
-  const router = new Navigo("/");
+  const router = new Navigo("/",{hash:true});
   //Not especially nice, BUT MEANT to simplify things. Make the router global so it can be accessed from all js-files
   window.router = router
  

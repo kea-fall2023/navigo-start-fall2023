@@ -12,7 +12,7 @@ export function initUsers() {
  async function getAndRenderUsers() {
   try {
     //Use this if you prefer to cache results (not recommended)
-    //usersFromServer = usersFromServer.length > 0 ? usersFromServer : await fetch(URL).then(res => res.json())
+    //usersFromServer = usersFromServer.http://localhost:3000length > 0 ? usersFromServer : await fetch(URL).then(res => res.json())
     usersFromServer = await fetch(URL).then(res => res.json())
     renderAllData(usersFromServer)
   }
