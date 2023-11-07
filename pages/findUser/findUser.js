@@ -57,7 +57,7 @@ async function fetchAndRenderUser(idFromURL) {
     window.router.navigate(`/${navigoRoute}${queryString}`, { callHandler: false, updateBrowserURL: true })
   } catch (err) {
     userDetails.innerHTML = ""
-    appendParagraph(userDetailsParagraph, "Could not find user: " + id, "color:red")
+    appendParagraph(userDetails, "Could not find user: " + id, "color:red")
   }
 }
 

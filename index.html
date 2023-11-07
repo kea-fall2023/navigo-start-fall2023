@@ -15,8 +15,6 @@
 
 <body style="font-family: sans-serif">
 
-  <!--
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navigo Demo</a>
@@ -26,23 +24,29 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul id="menu" class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/" data-navigo>Home</a>
+          <li class="nav-item" >
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item" >
+            <a href="/about" class="nav-link"  data-navigo>About</a>
+          </li>
+          <li class="nav-item" >
+            <a href="/users-modal" class="nav-link" data-navigo>All Users (modal)</a>
+          </li>
+          <li class="nav-item" >
+            <a href="/users-navigate" class="nav-link" data-navigo>All Users (navigate)</a>
+          </li>
+          <li class="nav-item" >
+            <a href="/find-user" class="nav-link"  data-navigo>Find User</a>
+          </li>
+          <li class="nav-item" >
+            <a href="show-match" class="nav-link"  data-navigo>Show Match</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about" data-navigo>About</a>
+            <a href="navigate-programatically" class="nav-link"  data-navigo>Navigate Programatically</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/products" data-navigo>Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/joke" data-navigo>Joke of today</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="show-match" data-navigo>Show Match</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="navigate-programatically" data-navigo>Navigate Programatically</a>
+            <a href="demo1" class="nav-link" data-navigo>Demo1</a>
           </li>
         </ul>
       </div>
@@ -50,34 +54,10 @@
   </nav>
   <hr/>
   <div style="margin-left: 50px;margin-right: auto;width: 80%;" id="content"></div>
--->
 
   <div style="margin-left: 20px;margin-right: auto;width: 90%;" id="topnav">
     <ul id="menu" class="menu-horizontal">
-      <li>
-        <a href="/" data-navigo>Home</a>
-      </li>
-      <li>
-        <a href="/about" data-navigo>About</a>
-      </li>
-      <li>
-        <a href="/users-modal" data-navigo>All Users (modal)</a>
-      </li>
-      <li>
-        <a href="/users-navigate" data-navigo>All Users (navigate)</a>
-      </li>
-      <li>
-        <a href="/find-user" data-navigo>Find User</a>
-      </li>
-      <li>
-        <a href="show-match" data-navigo>Show Match</a>
-      </li>
-      <li>
-        <a href="navigate-programatically" data-navigo>Navigate Programatically</a>
-      </li>
-      <li>
-        <a href="demo1" data-navigo>Demo1</a>
-      </li>
+ 
     </ul>
     <div id="content" style="margin:15px;"></div>
   </div>
